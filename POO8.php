@@ -10,11 +10,13 @@
     <?php
 
         require_once 'Visitante.php';
-        require_once 'Aluno.php';
+        require_once 'Alunos.php';
+        require_once 'Bolsista.php';
 
         $v1 = new Visitante('Samuel', 22, 'M');
         $a1 = new Aluno('Saulo', 17, 'M', 2, 'Ensino Médio');
-        var_dump($v1, $a1);
+        $b1 = new Bolsista('Sara', 20, 'F', 3, 'Sistemas da Informação', 12);
+        var_dump($v1, $a1, $b1);
     ?>    
 </body>
 </html>

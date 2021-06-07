@@ -8,16 +8,31 @@ class Aluno extends Pessoa
     
     function __construct($nome, $idade, $sexo, $matricula, $curso)
     {
-        setNome($nome);
-        setIdade($idade);
-        setSexo($sexo);
+        $this->setNome($nome);
+        $this->setIdade($idade);
+        $this->setSexo($sexo);
         $this->matricula = $matricula;
         $this->curso = $curso;
     }
 
     //Métodos especiais
 
-
+    function getMatricula()
+    {
+        return $this->matricula;
+    }
+    function setMatricula($value)
+    {
+        $this->matricula = $value;
+    }
+    function getCurso()
+    {
+        return $this->curso;
+    }
+    function setCurso($value)
+    {
+        $this->curso = $value;
+    }
 }
 
 ?>
