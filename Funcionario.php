@@ -3,8 +3,15 @@
 
 class Funcionario
 {
-    private $nome, $idade, $sexo;
+    protected $nome, $idade, $sexo;
 
+    function __construct($nome, $idade, $sexo)
+    {
+        $this->setNome($nome);
+        $this->setIdade($idade);
+        $this->setSexo($sexo);
+    }
+    
     function fazerAniver()
     {
         $this->setIdade($this->getIdade() + 1);
