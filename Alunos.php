@@ -15,6 +15,11 @@ class Aluno extends Pessoa
         $this->curso = $curso;
     }
 
+    function pagarMensalidade()
+    {
+        echo "<p>Mensalidade ALUNO ".$this->getNome()."  paga com sucesso!";
+    }
+
     //Métodos especiais
 
     function getMatricula()
@@ -34,5 +39,3 @@ class Aluno extends Pessoa
         $this->curso = $value;
     }
 }
-
-?>

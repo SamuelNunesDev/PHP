@@ -44,5 +44,3 @@ abstract class Pessoa
         $this->idade = $value;
     }
 }
-
-?>

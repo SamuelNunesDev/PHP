@@ -20,6 +20,10 @@ class Bolsista extends Aluno
     {
         $this->setBolsa($this->getBolsa + $value);
     }
+    function pagarMensalidade()
+    {
+        echo "<p>Mensalidade ALUNO ".$this->getNome()."  paga com desconto bolsista!";
+    }
 
     // Métodos Especiais
 
@@ -32,5 +36,3 @@ class Bolsista extends Aluno
         $this->bolsa = $value;
     }
 }
-
-?>

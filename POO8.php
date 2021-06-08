@@ -16,7 +16,12 @@
         $v1 = new Visitante('Samuel', 22, 'M');
         $a1 = new Aluno('Saulo', 17, 'M', 2, 'Ensino Médio');
         $b1 = new Bolsista('Sara', 20, 'F', 3, 'Sistemas da Informação', 12);
+        
+        $a1->pagarMensalidade();
+        $b1->pagarMensalidade();
+
         var_dump($v1, $a1, $b1);
+
     ?>    
 </body>
 </html>

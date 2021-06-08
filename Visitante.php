@@ -6,5 +6,3 @@ class Visitante extends Pessoa
 {
 
 }
-
-?>
