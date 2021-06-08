@@ -8,9 +8,7 @@ class Aluno extends Pessoa
     
     function __construct($nome, $idade, $sexo, $matricula, $curso)
     {
-        $this->setNome($nome);
-        $this->setIdade($idade);
-        $this->setSexo($sexo);
+        Pessoa::__construct($nome, $idade, $sexo);
         $this->matricula = $matricula;
         $this->curso = $curso;
     }

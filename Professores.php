@@ -8,9 +8,7 @@ class Professor extends Pessoa
 
     function __construct($nome, $idade, $sexo, $especialidade, $salario)
     {
-        $this->setNome($nome);
-        $this->setIdade($idade);
-        $this->setSexo($sexo);
+        Pessoa::__construct($nome, $idade, $sexo);
         $this->especialidade = $especialidade;
         $this->salario = $salario;
     }

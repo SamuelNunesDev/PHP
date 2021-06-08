@@ -8,11 +8,7 @@ class Bolsista extends Aluno
 
     function __construct($nome, $idade, $sexo, $matricula, $curso, $bolsa)
     {
-        $this->setNome($nome);
-        $this->setIdade($idade);
-        $this->setSexo($sexo);
-        $this->setMatricula($matricula);
-        $this->setCurso($curso);
+        Aluno::__construct($nome, $idade, $sexo, $matricula, $curso);
         $this->bolsa = $bolsa;
     }
 
