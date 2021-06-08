@@ -11,5 +11,5 @@ interface Controlador{
     public function ligarMudo();
     public function desligarMudo();
     public function play();
-    public  function pause();
+    public function pause();
 }
